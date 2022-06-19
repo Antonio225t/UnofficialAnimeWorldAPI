@@ -1,134 +1,647 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://awAPI.antonio225.repl.co/" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Unofficial-AnimeWorld-API</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Home";
-        var mkdocs_page_input_path = "index.md";
-        var mkdocs_page_url = "/";
-      </script>
-    
-    <script src="js/jquery-3.6.0.min.js" defer></script>
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> Unofficial-AnimeWorld-API
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
-    </li>
-    </ul>
-                </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">Unofficial-AnimeWorld-API</a>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Home</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
+        <link rel="canonical" href="https://antonio225.github.io/UnofficialAnimeWorldAPI/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Unofficial Anime World API</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
-              
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Unofficial Anime World API</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div><footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
         </div>
-      </div>
 
-    </section>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
 
-  </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#introduction" class="nav-link">Introduction.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#api" class="nav-link">API</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#get-anime" class="nav-link">Get Anime</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#search-anime" class="nav-link">Search Anime</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#get-anime-episodes" class="nav-link">Get Anime Episodes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#get-anime-episodes-comments" class="nav-link">Get Anime Episodes Comments</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#get-downloadable-links" class="nav-link">Get Downloadable Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#objects" class="nav-link">Objects</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#anime" class="nav-link">Anime</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#category" class="nav-link">Category</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#episode" class="nav-link">Episode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#downloadable-episode" class="nav-link">Downloadable Episode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#server" class="nav-link">Server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#comment" class="nav-link">Comment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-  </span>
+<h1 id="introduction">Introduction.</h1>
+<p>This is <strong>NOT</strong> the <a href="https://api.animeworld.tv/">official API</a>, all the credits goes to <a href="https://www.animeworld.tv/">AnimeWorld</a> because their staff members made all the job for making this Unofficial API possible.
+Have fun with this API, the link of the Unofficial api is: <code>https://awAPI.antonio225.repl.co</code>.
+By the way, note that this API is small and is not protected, don't use by getting banned please. Thank you for using my API.</p>
+<h1 id="api">API</h1>
+<h2 id="get-anime">Get Anime</h2>
+<pre><code>Method: GET
+Url:    /anime/{id}
+</code></pre>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li>
+<ul>
+<li><strong>id:</strong> The ID of the <a href="#anime">Anime</a>.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> an <a href="#anime">Anime</a> object.</li>
+<li><strong>Description:</strong> Retrives the <a href="#anime">Anime</a> object by it's ID.</li>
+</ul>
+<h2 id="search-anime">Search Anime</h2>
+<pre><code>Method: GET
+Url:    /anime?...
+</code></pre>
+<ul>
+<li><strong>Query Parameters:</strong></li>
+<li>
+<ul>
+<li><strong>id:</strong> The ID of the <a href="#anime">Anime</a>.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>name:</strong> A URL safe string of the animes name.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> an list of <a href="#anime">Anime</a> objects.</li>
+<li><strong>Description:</strong> Search the animes matching the id or the name.</li>
+</ul>
+<h2 id="get-anime-episodes">Get Anime Episodes</h2>
+<pre><code>Method: GET
+Url:    /anime/{id}/episodes/
+</code></pre>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li>
+<ul>
+<li><strong>id:</strong> The ID of the <a href="#anime">Anime</a>.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> a list of <a href="#server">Server</a> objects.</li>
+<li><strong>Description:</strong> Retrives the a list <a href="#server">Server</a> objects that offers the <a href="#episode">Episodes</a> of the anime, by the anime ID.</li>
+</ul>
+<h2 id="get-anime-episodes-comments">Get Anime Episodes Comments</h2>
+<pre><code>Method: GET
+Url:    /anime/{id}/comments/{epId}
+</code></pre>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li>
+<ul>
+<li><strong>id:</strong> The ID of the <a href="#anime">Anime</a>.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>epId:</strong> The ID of the <a href="#episode">Episode</a>.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> a list of <a href="#comment">Comment</a> objects.</li>
+<li><strong>Description:</strong> Retrives the <a href="#comment">Comments</a> in an anime's episode by the <a href="#anime">Anime</a> ID and the <a href="#episode">Episode</a> ID.</li>
+</ul>
+<h2 id="get-downloadable-links">Get Downloadable Links</h2>
+<pre><code>Method: GET
+Url:    /anime/download/{epId}
+</code></pre>
+<ul>
+<li><strong>Parameters:</strong></li>
+<li>
+<ul>
+<li><strong>epId:</strong> The ID of the <a href="#episode">Episode</a>.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> a list of <a href="#server">Server</a> objects.</li>
+<li><strong>Description:</strong> Gets the list of <a href="#server">Server</a> objects that contains a list of <a href="#downloadable-episode">DownloadableEpisode</a> inside the <code>episodes</code>.</li>
+</ul>
+<h1 id="objects">Objects</h1>
+<h2 id="anime">Anime</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>Id of the anime.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Translated name of the anime (sometimes can be equals as the <code>jtitle</code>)</td>
+</tr>
+<tr>
+<td>jtitle</td>
+<td>string</td>
+<td>Original name of the anime.</td>
+</tr>
+<tr>
+<td>studio</td>
+<td>str</td>
+<td>The name of the studio that built the anime.</td>
+</tr>
+<tr>
+<td>release</td>
+<td>date</td>
+<td>Release date.</td>
+</tr>
+<tr>
+<td>episodes</td>
+<td>str(int)</td>
+<td>Total number of the episodes.</td>
+</tr>
+<tr>
+<td>state</td>
+<td>str(int)</td>
+<td>Anime state (0: recording, 1: ended, 2: dropped(?)) (not fully documented).</td>
+</tr>
+<tr>
+<td>story</td>
+<td>str</td>
+<td>The story of the Anime.</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>list(<a href="#category">category</a>)</td>
+<td>list of categories attached to the anime.</td>
+</tr>
+<tr>
+<td>image</td>
+<td>str(url)</td>
+<td>The link of the anime image.</td>
+</tr>
+<tr>
+<td>durationEpisodes</td>
+<td>str(int)</td>
+<td>An estimated time for every episodes duration in minutes.</td>
+</tr>
+<tr>
+<td>link</td>
+<td>str</td>
+<td>The name of the anime URL safe.</td>
+</tr>
+<tr>
+<td>copertina</td>
+<td>str(url)</td>
+<td>The link for another anime image.</td>
+</tr>
+<tr>
+<td>year</td>
+<td>str(int)</td>
+<td>The year of the anime.</td>
+</tr>
+<tr>
+<td>releated</td>
+<td>str</td>
+<td>Unknown.</td>
+</tr>
+<tr>
+<td>dub</td>
+<td>str(int)</td>
+<td>Check if the anime is dubbed (0: false, 1: true).</td>
+</tr>
+<tr>
+<td>season</td>
+<td>str</td>
+<td>Anime season.</td>
+</tr>
+<tr>
+<td>identifier</td>
+<td>str</td>
+<td>The anime identifier that uses the link. like: <code>https://www.animeworold.tv/play/{link}.{identifier}</code>.</td>
+</tr>
+<tr>
+<td>createdAt</td>
+<td>date</td>
+<td>The date published to <a href="https://www.animeworld.tv/">AnimeWorld</a>.</td>
+</tr>
+<tr>
+<td>updatedAt</td>
+<td>date</td>
+<td>Date that the anime has updated to <a href="https://www.animeworld.tv/">AnimeWorld</a>.</td>
+</tr>
+<tr>
+<td>animeType</td>
+<td>str(int)</td>
+<td>The Id of the anime type (0: Anime, 1: OVA, 2: ONA) (not fully documented).</td>
+</tr>
+<tr>
+<td>language</td>
+<td>str(locale)</td>
+<td>The <a href="https://www.science.co.il/language/Locale-codes.php">lang</a> of the anime.</td>
+</tr>
+<tr>
+<td>totViews</td>
+<td>int</td>
+<td>The total number of people that watched the anime.</td>
+</tr>
+<tr>
+<td>dayViews</td>
+<td>int</td>
+<td>The daily number of people that watched the anime.</td>
+</tr>
+<tr>
+<td>weekViews</td>
+<td>int</td>
+<td>The weekly number of people that watched the anime.</td>
+</tr>
+<tr>
+<td>monthViews</td>
+<td>int</td>
+<td>The monthly number of people that watched the anime.</td>
+</tr>
+<tr>
+<td>copyright</td>
+<td>str(int)</td>
+<td>Check if the anime has copyrights (0: false, 1: true).</td>
+</tr>
+<tr>
+<td>fansub</td>
+<td>str(int)</td>
+<td>Check if the anime has fansubs (0: false, 1: true).</td>
+</tr>
+<tr>
+<td>fansubName</td>
+<td>str</td>
+<td>The name of the fansub.</td>
+</tr>
+<tr>
+<td>fansubLink</td>
+<td>str(url)</td>
+<td>The link leading to the fansub.</td>
+</tr>
+<tr>
+<td>malId</td>
+<td>int</td>
+<td>The Id of the MyAnimeList website.</td>
+</tr>
+<tr>
+<td>anilistId</td>
+<td>int</td>
+<td>The Id of the Ani website.</td>
+</tr>
+<tr>
+<td>mangaworldId</td>
+<td>int</td>
+<td>The Id of the MangaWorld website.</td>
+</tr>
+<tr>
+<td>malVote</td>
+<td>int</td>
+<td>The vote from <code>0.0</code> to <code>10.0</code>.</td>
+</tr>
+<tr>
+<td>trailer</td>
+<td>str(url)</td>
+<td>The (youtube) link leading to the trailer of the anime.</td>
+</tr>
+<tr>
+<td>scheduleUndated</td>
+<td>str(int)</td>
+<td>Check if the anime is undated (0: false, 1: true) (for not ended animes).</td>
+</tr>
+<tr>
+<td>choseTitle</td>
+<td>str</td>
+<td>The title choosen for this anime.</td>
+</tr>
+<tr>
+<td>animeTypeURL</td>
+<td>str</td>
+<td>The anime type URL safe.</td>
+</tr>
+<tr>
+<td>animeTypeName</td>
+<td>str</td>
+<td>Name of the anime type.</td>
+</tr>
+<tr>
+<td>stateName</td>
+<td>str</td>
+<td>The name of the anime state.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="category">Category</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>Id of the category.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>str</td>
+<td>Category name.</td>
+</tr>
+<tr>
+<td>slug</td>
+<td>str</td>
+<td>Category name (lower case).</td>
+</tr>
+<tr>
+<td>description</td>
+<td>str</td>
+<td>Documentation of the category.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="episode">Episode</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>Id of the episode.</td>
+</tr>
+<tr>
+<td>identifier</td>
+<td>str</td>
+<td>Episode link identifier, usefull for building the link (like: <code>https://www.animeworld.tv/play/{anime.link}.{anime.identifier}/{episode.identifier}</code>).</td>
+</tr>
+<tr>
+<td>number</td>
+<td>int</td>
+<td>The episode number of the anime.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="downloadable-episode">Downloadable Episode</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>The episode Id.</td>
+</tr>
+<tr>
+<td>link</td>
+<td>str(url)</td>
+<td>The link that will lead to a file or a webpage of the anime episode.</td>
+</tr>
+<tr>
+<td>unstableLink</td>
+<td>str(url)</td>
+<td>Same as <code>link</code> but not directly to the file. (Not direct link, use <code>link</code> not this).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="server">Server</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>The Id of the server (<code>9</code> is the Anime World Server).</td>
+</tr>
+<tr>
+<td>episodes</td>
+<td>list(<a href="#episode">Episode</a>) or list(<a href="#downloadable-episode">DownloadableEpisode</a>)</td>
+<td>The list of the episodes that the server offers.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>str</td>
+<td>The name of the server.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="comment">Comment</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bg</td>
+<td>str(url)</td>
+<td>The link of the authors bg image.</td>
+</tr>
+<tr>
+<td>avatar</td>
+<td>str(url)</td>
+<td>The link of the authors avatar image.</td>
+</tr>
+<tr>
+<td>name</td>
+<td>str</td>
+<td>The author's name.</td>
+</tr>
+<tr>
+<td>datetime</td>
+<td>date</td>
+<td>The date of the comment.</td>
+</tr>
+<tr>
+<td>content</td>
+<td>str</td>
+<td>Actual comment content.</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme_extra.js" defer></script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
 
-</body>
+    </body>
 </html>
 
 <!--
 MkDocs version : 1.3.0
-Build Date UTC : 1980-01-01 00:00:00+00:00
+Build Date UTC : 2022-06-19 15:39:00.877230+00:00
 -->
